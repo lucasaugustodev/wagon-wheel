@@ -1,0 +1,30 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  overflow: hidden;
+  background: #0a1230;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(ellipse at 30% 30%, rgba(80,180,255,0.35) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 80%, rgba(120,80,255,0.3) 0%, transparent 60%),
+    linear-gradient(135deg, #0c1a4a 0%, #0a0c30 50%, #1a0a3a 100%);
+}
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+canvas {
+  width: min(95vw, 720px);
+  height: auto;
+  aspect-ratio: 1/1;
+  display: block;
+  filter: drop-shadow(0 20px 60px rgba(0,0,0,0.7));
+}
